@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Article 1",
+        "excerpt": "Lorem ipsum afuiwafn",
+        "url": "post1.html",
+        "image": "./images/image1.jpg"
+    },
+    {
+        "title": "Article 2",
+        "excerpt": "Lorem ipsum afuiwafn",
+        "url": "post2.html",
+        "image": "./images/image2.jpg"
+    },
+    {
+        "title": "Article 3",
+        "excerpt": "Lorem ipsum afuiwafn",
+        "url": "post3.html",
+        "image": "./images/image3.jpg"
+    }
+]

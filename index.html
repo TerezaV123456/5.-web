@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/99166ee614.js" crossorigin="anonymous"></script>
+        <title>HOME</title>
+    </head>
+    <body>
+
+        <!--NAVBAR-->
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <!--LEFT SIDE-->
+                    <li><a class="nav-link" href="./aboutus/index.html">HOME</a></li>
+                    <li><a class="nav-link" href="./news/index.html">NEWS</a></li>
+                    <li><a class="nav-link" href="./teama/index.html">TEAM A</a></li>
+                    <li><a class="nav-link" href="./club/index.html">CLUB</a></li>
+
+                    <!--MIDDLE-->
+                    <li><a class="logo-link" href="index.html"><img src="./images/default-logo.png"></a></li>
+                    
+                    <!--RIGHT SIDE-->
+                    <li><a class="nav-link" href="./team/index.html">TEAM</a></li>
+                    <li><a class="nav-link" href="./library/index.html">PHOTOS</a></li>
+                    <li><a class="nav-link" href="./partners/index.html">PARTNERS</a></li>
+                    <li><a class="nav-link" href="./contactus/index.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--MAIN SECTION-->
+        <section id="main">
+            <div class="main-title">
+                <h1>LOREM IPSUM</h1>
+            </div>
+
+            <div class="main-subtitle">
+                <p>Lorem ipsum dolor sit amet, consectetur.adipiscing elit. Donec nec mi felis.</p>
+            </div>
+        </section>
+
+        <!--NEWS-->
+        <section id="news">
+            <h2>LOREM IPSUM</h2>
+            
+            <!--BOXES-->
+            <div class="news-boxes">
+                <div id="posts-container"></div>
+            </div>
+
+            <!--SEE MORE BUTTON-->
+            <div class="more-button">
+                <a href="./news/index.html"><button>SEE MORE</button></a>
+            </div>
+        </section>
+
+        <!--INFO BOXES-->
+        <section id="info-boxes">
+            <div class="info-container"></div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
