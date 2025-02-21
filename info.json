@@ -1,6 +1,10 @@
-[
-    {
-        "item-title": "Info 1",
-        "item.excerpt": "Tréninky A mužstva – út a čt 18:00"
-    }
-]
+{
+    "lastMatch": "Lorem ipsum...",
+    "nextMatch": "Lorem ipsum...",
+    "eventInvitations": "Lorem ipsum...",
+    "trainingTimes": [
+        {"team": "Lorem ipsum", "time": "day and time"},
+        {"team": "Lorem ipsum", "time": "day and time"},
+        {"team": "Lorem ipsum", "time": "day and time"}
+    ]
+}

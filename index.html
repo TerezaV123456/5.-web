@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/99166ee614.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="fetchTable.js"></script>
         <title>HOME</title>
     </head>
     <body>
@@ -40,22 +42,60 @@
             </div>
         </nav>
 
-        <!--MAIN SECTION-->
-        <section id="main">
-            <div class="main-title">
-                <h1>LOREM IPSUM</h1>
-            </div>
-
-            <div class="main-subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetur.adipiscing elit. Donec nec mi felis.</p>
-            </div>
-        </section>
-
         <!--NEWS-->
         <section id="news">
-            <h2>LOREM IPSUM</h2>
+            <h1>LOREM IPSUM</h1>
+
+            <h2>Lorem ipsum</h2>
+            <div id="player-info-container">
+                <div id="training-times" class="info-container"></div>
+                <div id="last-match" class="info-container"></div>
+                <div id="next-match" class="info-container"></div>
+                <div id="event-invitations" class="info-container"></div>
+            </div>
             
+            <div class="tabulka">
+                <table id="leagueTable">
+                    <thead>
+                        <tr>
+                            <th class="first-row">Position</th>
+                            <th class="first-row">Team</th>
+                            <th class="first-row">Matches</th>
+                            <th class="first-row">Points</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Lorem ipsum</th>
+                            <th>1</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Lorem ipsum</th>
+                            <th>1</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Lorem ipsum</th>
+                            <th>1</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lorem ipsum</th>
+                            <th>1</th>
+                            <th>3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data se načtou sem -->
+                    </tbody>
+                </table>
+            </div>
+
             <!--BOXES-->
+            <h2>Lorem ipsum</h2>
             <div class="news-boxes">
                 <div id="posts-container"></div>
             </div>
@@ -66,11 +106,16 @@
             </div>
         </section>
 
-        <!--INFO BOXES-->
-        <section id="info-boxes">
-            <div class="info-container"></div>
+        <!--SPONSORS-->
+        <section id="sponsors">
+            <h2>SPONSORS</h2>
+            <div class="sponsors-line">
+                <a href=""><img src="./images/default-logo.png"></a>
+                <a href=""><img src="./images/default-logo.png"></a>
+                <a href=""><img src="./images/default-logo.png"></a>
+                <a href=""><img src="./images/default-logo.png"></a>
+                <a href=""><img src="./images/default-logo.png"></a>
+            </div>
         </section>
-
-        <script src="script.js"></script>
     </body>
 </html>
