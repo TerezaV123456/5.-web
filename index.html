@@ -14,44 +14,68 @@
     </head>
     <body>
 
-        <!--NAVBAR-->
+        <!-- NAVBAR -->
         <nav>
+            <ul class="nav-links" id="desktopNav">
+
+                <!--LEFT-->
+                <li><a class="nav-link" href="index.html">HOME</a></li>
+                <li><a class="nav-link" href="./news/index.html">NEWS</a></li>
+                <li><a class="nav-link" href="./club/index.html">CLUB</a></li>
+                <li><a class="nav-link" href="./teama/index.html">TEAM A</a></li>
+
+                <!--MIDDLE-->
+                <li><a class="logo-link" href="index.html"><img src="./images/default-logo.png" alt="Site Logo"></a></li>
+
+                <!--RIGHT-->
+                <li><a class="nav-link" href="./team/index.html">TEAM</a></li>
+                <li><a class="nav-link" href="./library/index.html">PHOTOS</a></li>
+                <li><a class="nav-link" href="./partners/index.html">PARTNERS</a></li>
+                <li><a class="nav-link" href="./contactus/index.html">CONTACT</a></li>
+            </ul>
+
+            <!-- Hamburger Menu for Mobile -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-
-            <div class="navbar">
-                <ul>
-                    <!--LEFT SIDE-->
-                    <li><a class="nav-link" href="./aboutus/index.html">HOME</a></li>
-                    <li><a class="nav-link" href="./news/index.html">NEWS</a></li>
-                    <li><a class="nav-link" href="./teama/index.html">TEAM A</a></li>
-                    <li><a class="nav-link" href="./club/index.html">CLUB</a></li>
-
-                    <!--MIDDLE-->
-                    <li><a class="logo-link" href="index.html"><img src="./images/default-logo.png"></a></li>
-                    
-                    <!--RIGHT SIDE-->
-                    <li><a class="nav-link" href="./team/index.html">TEAM</a></li>
-                    <li><a class="nav-link" href="./library/index.html">PHOTOS</a></li>
-                    <li><a class="nav-link" href="./partners/index.html">PARTNERS</a></li>
-                    <li><a class="nav-link" href="./contactus/index.html">CONTACT</a></li>
-                </ul>
-            </div>
         </nav>
 
+        <!-- SIDE NAVIGATION -->
+        <div id="sideNav" class="side-nav">
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+            <ul>
+                <li><a class="logo-link" href="index.html"><img src="./images/default-logo.png" alt="Site Logo"></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="./news/index.html">NEWS</a></li>
+                <li><a href="./club/index.html">CLUB</a></li>
+                <li><a href="./teama/index.html">TEAM A</a></li>
+                <li><a href="./team/index.html">TEAM</a></li>
+                <li><a href="./library/index.html">PHOTOS</a></li>
+                <li><a href="./partners/index.html">PARTNERS</a></li>
+                <li><a href="./contactus/index.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById('sideNav').classList.toggle('active');
+            }
+        </script>
+    
         <!--NEWS-->
         <section id="news">
             <h1>LOREM IPSUM</h1>
 
-            <h2>Lorem ipsum</h2>
+            <h2>Informations</h2>
             <div id="player-info-container">
                 <div id="training-times" class="info-container"></div>
-                <div id="last-match" class="info-container"></div>
-                <div id="next-match" class="info-container"></div>
                 <div id="event-invitations" class="info-container"></div>
+                <div class="smaller-containers">
+                    <div id="last-match" class="info-container"></div>
+                    <div id="next-match" class="info-container"></div>
+                </div>
             </div>
             
             <div class="tabulka">
@@ -60,31 +84,26 @@
                         <tr>
                             <th class="first-row">Position</th>
                             <th class="first-row">Team</th>
-                            <th class="first-row">Matches</th>
                             <th class="first-row">Points</th>
                         </tr>
                         <tr>
                             <th>1</th>
                             <th>Lorem ipsum</th>
-                            <th>1</th>
                             <th>3</th>
                         </tr>
                         <tr>
                             <th>2</th>
                             <th>Lorem ipsum</th>
-                            <th>1</th>
                             <th>3</th>
                         </tr>
                         <tr>
                             <th>3</th>
                             <th>Lorem ipsum</th>
-                            <th>1</th>
                             <th>3</th>
                         </tr>
                         <tr>
                             <th>4</th>
                             <th>Lorem ipsum</th>
-                            <th>1</th>
                             <th>3</th>
                         </tr>
                     </thead>
@@ -95,7 +114,7 @@
             </div>
 
             <!--BOXES-->
-            <h2>Lorem ipsum</h2>
+            <h2>News</h2>
             <div class="news-boxes">
                 <div id="posts-container"></div>
             </div>
@@ -117,5 +136,22 @@
                 <a href=""><img src="./images/default-logo.png"></a>
             </div>
         </section>
+         <!--FOOTER-->
+         <footer>
+            <div class="footer-left">
+                    <p>Copyright &copy; 2025 Lorem ipsum</p>
+                    <p>Developed by <a href="">Tereza Vavrušková</a></p>
+            </div>
+
+            <div class="footer-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="./images/default-logo.png">
+            </div>
+        </footer>
+
+
+        <!--SCROLL BUTTON-->
+        <button id="scrollToTop" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></button>
+        
     </body>
 </html>

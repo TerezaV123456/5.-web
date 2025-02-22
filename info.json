@@ -1,10 +1,10 @@
 {
-    "lastMatch": "Lorem ipsum...",
-    "nextMatch": "Lorem ipsum...",
-    "eventInvitations": "Lorem ipsum...",
+    "lastMatch": "Last match",
+    "nextMatch": "Next match",
+    "eventInvitations": "Event invitations",
     "trainingTimes": [
-        {"team": "Lorem ipsum", "time": "day and time"},
-        {"team": "Lorem ipsum", "time": "day and time"},
-        {"team": "Lorem ipsum", "time": "day and time"}
+        {"team": "Team", "time": "day and time"},
+        {"team": "Team", "time": "day and time"},
+        {"team": "Team", "time": "day and time"}
     ]
 }

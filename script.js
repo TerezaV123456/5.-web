@@ -32,14 +32,14 @@ fetch(postsUrl)
 fetch(infoUrl)
     .then(response => response.json())
     .then(data => {
-        document.getElementById('last-match').innerHTML = `<h3>Lorem ipsum</h3><p>${data.lastMatch}</p>`;
-        document.getElementById('next-match').innerHTML = `<h3>Lorem ipsum</h3><p>${data.nextMatch}</p>`;
-        document.getElementById('event-invitations').innerHTML = `<h3>Lorem ipsum</h3><p>${data.eventInvitations}</p>`;
+        document.getElementById('last-match').innerHTML = `<h3>Last match</h3><p>${data.lastMatch}</p>`;
+        document.getElementById('next-match').innerHTML = `<h3>Next match</h3><p>${data.nextMatch}</p>`;
+        document.getElementById('event-invitations').innerHTML = `<h3>Event invitations</h3><p>${data.eventInvitations}</p>`;
 
         const trainingContainer = document.getElementById('training-times');
         trainingContainer.innerHTML = '';
         const trainingHeader = document.createElement('h3');
-        trainingHeader.innerText = 'Lorem ipsum';
+        trainingHeader.innerText = 'Training times';
         trainingContainer.appendChild(trainingHeader);
 
         data.trainingTimes.forEach(training => {
@@ -68,3 +68,30 @@ fetch(tableUrl)
         });
     })
     .catch(error => console.error('Chyba při načítání tabulky:', error));
+
+// Přidání tlačítka pro scrollování nahoru
+document.addEventListener("DOMContentLoaded", function () {
+    // Vytvoření tlačítka
+    const scrollToTopButton = document.createElement('button');
+    scrollToTopButton.id = 'scrollToTop';
+    scrollToTopButton.innerHTML = '<i class="fa-solid fa-angles-up"></i>'; // Přidání ikony
+
+    document.body.appendChild(scrollToTopButton);
+
+    // Skrytí tlačítka na začátku
+    scrollToTopButton.style.display = "none";
+
+    // Přidání event listeneru na scroll
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+    });
+
+    // Kliknutím posune stránku nahoru
+    scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
