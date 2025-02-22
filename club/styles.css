@@ -10,8 +10,6 @@ body, html {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
     background-color: #292929;
     color: #ffffff;
 }
@@ -166,6 +164,136 @@ nav a:hover {
 .nav-link {
     display: flex;
 }
+
+/*CLUB INFO*/
+
+.invisible-text {
+    font-size: 3rem;
+    color: #292929;
+    margin-bottom: 10vh;
+}
+
+#club-info {
+    margin: 0vmax 10vmax 5vmax 10vmax ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+#club-info h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*CONTACT*/
+
+#address {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#address h2 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.address-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.address-box i {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.address-box p {
+    text-align: center;
+    gap: 2vh;
+    font-weight: 400;
+}
+
+/*TEAM*/
+
+#team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0vmax 20vmax 5vmax 20vmax;
+}
+
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.team-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-box {
+    color: #000000;
+    background-color: #ffffff;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 1vh;
+}
+
+.team-box img {
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-box a {
+    color: #666666;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.team-box p {
+    font-weight: 500;
+}
+
+
+
+/*HISTORY*/
+
+
 
 @media (max-width: 768px) {
     nav {
